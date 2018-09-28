@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <title>
+         NYT-Search
+       </title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- Linking CSS Reset File -->
+       <link rel="stylesheet" type="text/css" href="css/reset.css">
+       <!-- Latest compiled and minified CSS -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+       <!-- Linking CSS -->
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+       <!-- Added link to the jQuery Library -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     </head>
+
+
+<body>
+ <div class="container">
+   <div class= "row jumbotron">
+       <p class= "lead">New York Times Search</p>
+   </div>
+   <div class= "row"> 
+        <div class="form-group">
+            <label for="SearchTerm">Search Term</label>
+            <input type="ST" class="form-control" id="SearchTerm">
+        </div>
+   </div>   
+
+   <div class= "row"> 
+    <div class="form-group">
+        <label for="NumberRecords">Number of Records to Retrieve</label>
+        <input type="NR" class="form-control" id="NumberRecords">
+    </div>
+    </div>
+
+    <div class= "row"> 
+        <div class="form-group">
+            <label for="StartYear">Start Year (Optional)</label>
+            <input type="SY" class="form-control" id="StartYear">
+        </div>
+   </div>
+
+   <div class= "row"> 
+    <div class="form-group">
+        <label for="EndYear">End Year (Optional)</label>
+        <input type="EY" class="form-control" id="EndYear">
+    </div>
+    </div>
+
+    <div class= "row">
+        <button>Search</button>
+        <button>Clear Results</button>
+    </div>
+
+    <div class="row">
+        <div class="displayArticles"></div> 
+    </div>
+
+
+</div>
+
+
+<script src="assets/javascript/game.js">
+
+
+</script>
+
+</body>
+</html>
