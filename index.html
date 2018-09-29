@@ -14,6 +14,7 @@
        <link rel="stylesheet" type="text/css" href="css/style.css">
        <!-- Added link to the jQuery Library -->
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="./main.js"></script>
 
      </head>
 
@@ -25,29 +26,29 @@
    </div>
    <div class= "row"> 
         <div class="form-group">
-            <label for="SearchTerm">Search Term</label>
-            <input type="ST" class="form-control" id="SearchTerm">
+            <label for="inputterm">Search Term</label>
+            <input type="ST" class="form-control" id="inputterm">
         </div>
    </div>   
 
    <div class= "row"> 
     <div class="form-group">
-        <label for="NumberRecords">Number of Records to Retrieve</label>
-        <input type="NR" class="form-control" id="NumberRecords">
+        <label for="limit">Number of Records to Retrieve</label>
+        <input type="NR" class="form-control" id="limit">
     </div>
     </div>
 
     <div class= "row"> 
         <div class="form-group">
-            <label for="StartYear">Start Year (Optional)</label>
-            <input type="SY" class="form-control" id="StartYear">
+            <label for="inputstartyear">Start Year (Optional)</label>
+            <input type="SY" class="form-control" id="inputstartyear">
         </div>
    </div>
 
    <div class= "row"> 
     <div class="form-group">
-        <label for="EndYear">End Year (Optional)</label>
-        <input type="EY" class="form-control" id="EndYear">
+        <label for="inputendyear">End Year (Optional)</label>
+        <input type="EY" class="form-control" id="inputendyear">
     </div>
     </div>
 
@@ -57,17 +58,43 @@
     </div>
 
     <div class="row">
-        <div class="displayArticles"></div> 
+        <div class="article-container">
+            <!-- These codes below are just placeholderes to check styling. It's my part with JS to generate them, but just that we have them here already -->
+            <div class = "article-row">
+                <p class = "title">
+                    Congress, Look at Tesla
+                </p>
+                <p class = "article-date">
+                    2018-08-17
+                </p>
+                <img class = "thumbnail" src="https://static01.nyt.com/images/2018/08/17/business/17MUSK1/17MU-thumbWide.jpg">
+                <p class = "summary">
+                    Why can’t Republicans in Congress react like the Tesla board of directors to impulsive and irrational tweets?
+                    <a target="_blank" href="https://www.nytimes.com/2018/08/17/opinion/letters/tesla-musk-trump.html">More...</a>
+                </p>
+
+            </div>
+            <!-- End of the first article -->
+            <div class = "article-row">
+                <p class = "title">
+                    Congress, Look at Tesla
+                </p>
+                <p class = "article-date">
+                    2018-08-17
+                </p>
+                <img class = "thumbnail" src="https://static01.nyt.com/images/2018/08/17/business/17MUSK1/17MU-thumbWide.jpg">
+                <p class = "summary">
+                    Why can’t Republicans in Congress react like the Tesla board of directors to impulsive and irrational tweets?
+                    <a target="_blank" href="https://www.nytimes.com/2018/08/17/opinion/letters/tesla-musk-trump.html">More...</a>
+                </p>
+
+            </div>
+            <!-- End of the 2nd article -->
+        </div> 
     </div>
 
 
 </div>
-
-
-<script src="assets/javascript/game.js">
-
-
-</script>
 
 </body>
 </html>
