@@ -7,89 +7,61 @@
        </title>
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <!-- Linking CSS Reset File -->
-       <link rel="stylesheet" type="text/css" href="css/reset.css">
-       <!-- Latest compiled and minified CSS -->
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
        <!-- Linking CSS -->
+       <link rel="stylesheet" type="text/css" href="css/reset.css">
+       <!-- Latest compiled and minified CSS -->       
        <link rel="stylesheet" type="text/css" href="css/style.css">
        <!-- Added link to the jQuery Library -->
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
        <script src="./main.js"></script>
-
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto|Oswald|Ultra|Krub">
      </head>
 
 
 <body>
  <div class="container">
-   <div class= "row jumbotron">
-       <p class= "lead">New York Times Search</p>
+   <div class= "row top">
+       <div class ="col-xs-12 col-md-5">
+           <a href="/">
+                <img src="./images/NYTDevLogo.svg">
+           </a>
+       </div>
+       <div class ="col-xs-12 col-md-7">
+            <p class= "lead">New York Times Search</p>
+       </div>       
+
    </div>
-   <div class= "row"> 
+   <div class= "row searchbody"> 
         <div class="form-group">
             <label for="inputterm">Search Term</label>
             <input type="ST" class="form-control" id="inputterm">
         </div>
-   </div>   
 
-   <div class= "row"> 
-    <div class="form-group">
-        <label for="limit">Number of Records to Retrieve</label>
-        <input type="NR" class="form-control" id="limit">
-    </div>
-    </div>
-
-    <div class= "row"> 
         <div class="form-group">
-            <label for="inputstartyear">Start Year (Optional)</label>
+            <label for="limit">Number of Records to Retrieve</label>
+            <input type="NR" class="form-control" id="limit">
+        </div>
+
+        <div class="form-group">
+            <label for="inputstartyear">Start Year (YYYY)</label>
             <input type="SY" class="form-control" id="inputstartyear">
         </div>
-   </div>
 
-   <div class= "row"> 
-    <div class="form-group">
-        <label for="inputendyear">End Year (Optional)</label>
-        <input type="EY" class="form-control" id="inputendyear">
-    </div>
+        <div class="form-group">
+            <label for="inputendyear">End Year (YYYY)</label>
+            <input type="EY" class="form-control" id="inputendyear">
+        </div>
     </div>
 
     <div class= "row">
-        <button>Search</button>
-        <button>Clear Results</button>
+        <button id=search>Search</button>
+        <button id=clear>Clear Results</button>
     </div>
 
     <div class="row">
-        <div class="article-container">
-            <!-- These codes below are just placeholderes to check styling. It's my part with JS to generate them, but just that we have them here already -->
-            <div class = "article-row">
-                <p class = "title">
-                    Congress, Look at Tesla
-                </p>
-                <p class = "article-date">
-                    2018-08-17
-                </p>
-                <img class = "thumbnail" src="https://static01.nyt.com/images/2018/08/17/business/17MUSK1/17MU-thumbWide.jpg">
-                <p class = "summary">
-                    Why can’t Republicans in Congress react like the Tesla board of directors to impulsive and irrational tweets?
-                    <a target="_blank" href="https://www.nytimes.com/2018/08/17/opinion/letters/tesla-musk-trump.html">More...</a>
-                </p>
-
-            </div>
-            <!-- End of the first article -->
-            <div class = "article-row">
-                <p class = "title">
-                    Congress, Look at Tesla
-                </p>
-                <p class = "article-date">
-                    2018-08-17
-                </p>
-                <img class = "thumbnail" src="https://static01.nyt.com/images/2018/08/17/business/17MUSK1/17MU-thumbWide.jpg">
-                <p class = "summary">
-                    Why can’t Republicans in Congress react like the Tesla board of directors to impulsive and irrational tweets?
-                    <a target="_blank" href="https://www.nytimes.com/2018/08/17/opinion/letters/tesla-musk-trump.html">More...</a>
-                </p>
-
-            </div>
-            <!-- End of the 2nd article -->
+        <div id="article-container">
+ 
         </div> 
     </div>
 
