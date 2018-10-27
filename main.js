@@ -65,6 +65,7 @@ $.ajax({
 
     // The attempt above not works, and I don't know why
     var articleRow = "";
+    $("#article-container").empty();
     for (var i=0;i<title.length;i++){
         articleRow = "<div class=article-row>"+
             "<p class = title>"+ title[i] +"</p>"+
